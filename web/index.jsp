@@ -14,6 +14,9 @@
     <body>
         <h1>Hello World!</h1>
         <div>${info}</div>
-        <a href="controller?command=login">111</a>
+        <a href="controller?command=login">login</a><br>
+        <a href="controller?command=logout">logout</a><br>
+        <a href="controller?command=page1">page1</a><br>
+        <a href="controller?command=page2">page2</a>
     </body>
 </html>

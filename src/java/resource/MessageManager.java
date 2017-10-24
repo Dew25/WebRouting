@@ -12,7 +12,7 @@ import java.util.ResourceBundle;
  * @author jvm
  */
 public class MessageManager {
-    private final static ResourceBundle resourceBundle = ResourceBundle.getBundle("resources.messages");
+    private final static ResourceBundle resourceBundle = ResourceBundle.getBundle("resource.messages");
     private MessageManager(){}
     public static String getProperty(String key){
         return resourceBundle.getString(key);

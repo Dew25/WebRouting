@@ -1,6 +1,6 @@
 <%-- 
-    Document   : page2
-    Created on : 17.10.2017, 22:47:11
+    Document   : error
+    Created on : 23.10.2017, 20:32:10
     Author     : jvm
 --%>
 
@@ -12,7 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Page2!</h1>
-        <a href="controller?command=Logout">Logout</a>
+        <h1>Error page!</h1>
+        ${pageContext.session.getAttribute("nullPage")}
+        
     </body>
 </html>

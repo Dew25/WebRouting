@@ -1,6 +1,6 @@
 <%-- 
-    Document   : error
-    Created on : 23.10.2017, 20:32:10
+    Document   : logout
+    Created on : 24.10.2017, 17:07:34
     Author     : jvm
 --%>
 
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Error page!</h1>
+        <h1>Logout page!</h1>
     </body>
 </html>

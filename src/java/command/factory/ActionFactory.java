@@ -7,6 +7,7 @@ package command.factory;
 
 import command.ActionCommand;
 import command.EmptyCommand;
+import command.ErrorCommand;
 import command.client.CommandEnum;
 import javax.servlet.http.HttpServletRequest;
 import resource.MessageManager;
@@ -27,7 +28,8 @@ public class ActionFactory {
             current = currentEnum.getCurrentCommand();
             
         } catch (IllegalArgumentException e) {
-            request.setAttribute("wrongAction",action + MessageManager.getProperty("massage.wrongaction"));
+            request.setAttribute("wrongAction",action + MessageManager.getProperty("message.wrongaction"));
+            current = null;
         }
         return current;
     }
